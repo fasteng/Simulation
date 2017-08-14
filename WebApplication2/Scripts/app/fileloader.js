@@ -91,6 +91,8 @@
             data: data,
             success: function (response) {
                 //code after success
+                $('#UploadModel + label').text(files[0].name)
+
                 var loader = new THREE.AssimpJSONLoader();
                 if(object != null){scene.remove(object)}
                 object = loader.parse(response);
