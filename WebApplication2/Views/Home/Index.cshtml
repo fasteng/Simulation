@@ -1,11 +1,13 @@
 ﻿@section SPAViews {
     @Html.Partial("_Home")
 }
-<div><input type="file" id="UploadModel" /></div>
+<div>
+    <input type="file" id="UploadModel" class="floating-btn"/>
+    <label for="UploadModel">Choose a file</label>
+</div>
 <div id="canvas"></div>
 @section Scripts{
     @Scripts.Render("~/bundles/knockout")
-    @Scripts.Render("~/bundles/app")
 }
 <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="~/Scripts/app/three.min.js"></script>

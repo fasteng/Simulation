@@ -1,8 +1,4 @@
-﻿body {
-    
-}
-
-/* Set padding to keep content from hitting the edges */
+﻿/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -32,4 +28,42 @@ textarea {
         float: none;
         padding: 10px 15px;
     }
+}
+
+.floating-btn, .floating-btn + label{
+    position:absolute;
+    top:20px;
+    left: 20px;
+    padding: 5px;
+}
+
+#UploadModel {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#UploadModel + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#UploadModel + label,
+#UploadModel + label:hover {
+    background-color: steelblue;
+}
+
+#UploadModel:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#UploadModel + label * {
+    pointer-events: none;
 }

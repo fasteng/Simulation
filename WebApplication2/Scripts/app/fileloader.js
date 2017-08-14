@@ -1,5 +1,5 @@
 ﻿    var container, stats;
-    var camera, scene, renderer, objects, controls;
+    var camera, scene, renderer, objects, controls, axis, object;
     var clock = new THREE.Clock();
     // init scene
     init();
@@ -20,7 +20,7 @@
         camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 2000);
         camera.position.set(2, 4, 5);
         scene = new THREE.Scene();
-        //scene.fog = new THREE.FogExp2(0x000000, 0.035);
+        scene.fog = new THREE.FogExp2(0x000000, 0.12);
         // Lights
         scene.add(new THREE.AmbientLight(0xcccccc));
         var directionalLight = new THREE.DirectionalLight(0xeeeeee);
@@ -29,6 +29,10 @@
         directionalLight.position.z = Math.random() - 0.5;
         directionalLight.position.normalize();
         scene.add(directionalLight);
+
+        //Axis
+        axis = new THREE.AxisHelper(30);
+        scene.add(axis);
 
         
         // Renderer
@@ -88,7 +92,8 @@
             success: function (response) {
                 //code after success
                 var loader = new THREE.AssimpJSONLoader();
-                var object = loader.parse(response);
+                if(object != null){scene.remove(object)}
+                object = loader.parse(response);
                 object.scale.multiplyScalar(0.02);
                 scene.add(object);
                 render();
