@@ -37,15 +37,7 @@ textarea {
     padding: 5px;
 }
 
-#UploadModel {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#UploadModel + label {
+#uploadModel{
     font-size: 1.25em;
     font-weight: 700;
     color: white;
@@ -54,16 +46,16 @@ textarea {
     cursor: pointer;
 }
 
-#UploadModel + label,
-#UploadModel + label:hover {
+#uploadModel,
+#uploadModel:hover {
     background-color: steelblue;
 }
 
-#UploadModel:focus + label {
+#uploadModel:focus{
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px;
 }
 
-#UploadModel + label * {
+#uploadModel * {
     pointer-events: none;
 }

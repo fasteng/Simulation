@@ -266,7 +266,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\AssimpJSONLoader.js" />
-    <Content Include="Scripts\app\fileloader.js" />
+    <Content Include="Scripts\app\GridHelper.js" />
+    <Content Include="Scripts\app\axes.js" />
+    <Content Include="Scripts\app\modelloader.js" />
     <Content Include="Scripts\app\OrbitControls.js" />
     <Content Include="Scripts\app\three.min.js" />
     <Content Include="Scripts\app\TrackballControls.js" />
@@ -299,6 +301,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\helvetiker_regular.typeface.json" />
     <None Include="Properties\PublishProfiles\WebApplication220170812123759 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -312,6 +315,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
+    <Content Include="Scripts\SimpleAjaxUploader.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />

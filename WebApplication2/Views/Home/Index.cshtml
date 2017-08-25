@@ -2,15 +2,12 @@
     @Html.Partial("_Home")
 }
 <div>
-    <input type="file" id="UploadModel" class="floating-btn" accept=".json"/>
-    <label for="UploadModel">Choose a file</label>
+    <button id="uploadModel" class="floating-btn">Choose a file</button>
 </div>
 <div id="canvas"></div>
 @section Scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/app")
 }
-<script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="~/Scripts/app/three.min.js"></script>
-<script type="text/javascript" src="~/Scripts/app/AssimpJSONLoader.js"></script>
-<script type="text/javascript" src="~/Scripts/app/TrackballControls.js"></script>
-<script type="text/javascript" src="~/Scripts/app/fileloader.js"></script>

@@ -28,7 +28,13 @@ namespace WebApplication2
                 "~/Scripts/app/app.viewmodel.js",
                 "~/Scripts/app/home.viewmodel.js",
                 "~/Scripts/app/_run.js",
-                "~/Scripts/app/three.js"));
+                "~/Scripts/app/three.min.js",
+                "~/Scripts/app/AssimpJSONLoader.js",
+                "~/Scripts/app/GridHelper.js",
+                "~/Scripts/app/TrackballControls.js",
+                "~/Scripts/SimpleAjaxUploader.js",
+                "~/Scripts/app/axes.js",
+                "~/Scripts/app/modelloader.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
