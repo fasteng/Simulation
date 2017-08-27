@@ -1,0 +1,13 @@
+﻿@section SPAViews {
+    @Html.Partial("_Home")
+}
+<div>
+    <button id="uploadModel" class="floating-btn">Choose a file</button>
+</div>
+<div id="canvas"></div>
+@section Scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/app")
+}
