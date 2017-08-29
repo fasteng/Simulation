@@ -266,7 +266,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\AssimpJSONLoader.js" />
-    <Content Include="Scripts\app\GridHelper.js" />
     <Content Include="Scripts\app\axes.js" />
     <Content Include="Scripts\app\modelloader.js" />
     <Content Include="Scripts\app\OrbitControls.js" />

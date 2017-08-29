@@ -30,7 +30,6 @@ namespace WebApplication2
                 "~/Scripts/app/_run.js",
                 "~/Scripts/app/three.min.js",
                 "~/Scripts/app/AssimpJSONLoader.js",
-                "~/Scripts/app/GridHelper.js",
                 "~/Scripts/app/TrackballControls.js",
                 "~/Scripts/SimpleAjaxUploader.js",
                 "~/Scripts/app/axes.js",
